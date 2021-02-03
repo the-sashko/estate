@@ -8,12 +8,14 @@ cd "$scriptDir/.." || exit 1
 mkdir data/logs
 chmod -R 755 data/logs
 
-cp install/config/credentials.json data/config/credentials.json
-chmod 755 data/config/credentials.json
+cp install/config/telegram.json data/config/telegram.json
+chmod 755 data/config/telegram.json
 
 python3 -m venv .env
 
 source .env/bin/activate
+
+pip3 install --upgrade pip
 
 pip3 install -r requirements.txt
 
