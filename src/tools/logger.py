@@ -5,7 +5,7 @@ import datetime
 from tools.telegram import Telegram
 
 class Logger:
-    __LOG_DIR_PATH  = '%s/logs/%s'
+    __LOG_DIR_PATH  = '%s/data/logs/%s'
     __LOG_FILE_PATH = '%s/%s.log'
 
     __DEFAULT_LOG_TYPE = 'info'

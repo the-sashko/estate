@@ -3,6 +3,8 @@
 currDir=$(pwd)
 scriptDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" > /dev/null && pwd)"
 
+./scripts/update.sh
+
 cd "$scriptDir/.." || exit 1
 
 source .env/bin/activate

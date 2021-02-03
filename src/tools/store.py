@@ -5,7 +5,7 @@ from os import path, getcwd, chmod
 from typing import Union
 
 class Store:
-    __DB_FILE_PATH = 'bin/store.db'
+    __DB_FILE_PATH = 'data/store.db'
 
     __INIT_SQL = '''
         CREATE TABLE cards (

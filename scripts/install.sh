@@ -5,11 +5,11 @@ scriptDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" > /dev/null && pwd)"
 
 cd "$scriptDir/.." || exit 1
 
-mkdir logs
-chmod -R 755 logs
+mkdir data/logs
+chmod -R 755 data/logs
 
-cp install/config/credentials.json config/credentials.json
-chmod 755 config/credentials.json
+cp install/config/credentials.json data/config/credentials.json
+chmod 755 data/config/credentials.json
 
 python3 -m venv .env
 
