@@ -7,8 +7,11 @@ cd "$scriptDir/.."
 
 cp "$scriptDir/cron.sh" cron.sh
 
+cp install/config/telegram.json data/config/telegram.json
+
+vi data/config/telegram.json
+
 rm -rf .git
-rm -rf data
 rm -rf install
 rm -rf scripts
 rm -rf docs
