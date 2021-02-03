@@ -26,11 +26,13 @@ class Prian(site.Site):
         html    = self.remote.getHtml(prianUrl)
         nextUrl = self.__getNextUrl(html, prianUrl)
 
-        while nextUrl is not None:
-            self.__parseCardsFromHtml(html, nextUrl)
+        self.__parseCardsFromHtml(html, nextUrl)
 
+        while nextUrl is not None:
             html    = self.remote.getHtml(nextUrl)
             nextUrl = self.__getNextUrl(html, nextUrl)
+
+            self.__parseCardsFromHtml(html, nextUrl)
 
         self.logger.log('End Parsing prian.ru')
 
