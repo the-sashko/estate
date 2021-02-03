@@ -10,11 +10,11 @@ class Telegram:
     __token     = None
 
     def __init__(self):
-        config = Settings().getCredentialsConfig()
+        config = Settings().getTelegramConfig()
 
-        self.__token     = config['telegram_token']
-        self.__idChannel = config['telegram_channel_id']
-        self.__idChat    = config['telegram_chat_id']
+        self.__token     = config['bot_token']
+        self.__idChannel = config['channel_id']
+        self.__idChat    = config['chat_id']
 
     def sendToBot(self, message: str) -> bool:
         return self.__send(self.__idChat, message)

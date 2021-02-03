@@ -10,8 +10,8 @@ class App():
     def __init__(self):
         self.__logger = logger.Logger()
 
-        sitesConfig   = settings.Settings().getSitesConfig()
-        self.__parser = parser.Parser(sitesConfig)
+        parserConfig  = settings.Settings().getParserConfig()
+        self.__parser = parser.Parser(parserConfig)
         
     def run(self):
         self.__logger.log('Start Parser')

@@ -1,3 +1,4 @@
+__pycache__
 bin/store.db
-config/credentials.json
+config/telegram.json
 logs

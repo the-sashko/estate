@@ -5,20 +5,20 @@ from os import getcwd, path
 class Settings:
     __CONFIG_FILE_PATH = '%s/config/%s.json'
 
-    __SITES_CONFIG_NAME       = 'sites'
-    __CREDENTIALS_CONFIG_NAME = 'credentials'
+    __PARSER_CONFIG_NAME   = 'parser'
+    __TELEGRAM_CONFIG_NAME = 'telegram'
 
     __data = {}
 
     def __init__(self):
-        self.__setConfig(self.__SITES_CONFIG_NAME)
-        self.__setConfig(self.__CREDENTIALS_CONFIG_NAME)
+        self.__setConfig(self.__PARSER_CONFIG_NAME)
+        self.__setConfig(self.__TELEGRAM_CONFIG_NAME)
 
-    def getSitesConfig(self) -> dict:
-        return self.__getConfig(self.__SITES_CONFIG_NAME)
+    def getParserConfig(self) -> dict:
+        return self.__getConfig(self.__PARSER_CONFIG_NAME)
 
-    def getCredentialsConfig(self) -> dict:
-        return self.__getConfig(self.__CREDENTIALS_CONFIG_NAME)
+    def getTelegramConfig(self) -> dict:
+        return self.__getConfig(self.__TELEGRAM_CONFIG_NAME)
 
     def __getConfig(self, configName: str) -> dict:
         if not configName in self.__data:
