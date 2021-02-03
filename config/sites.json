@@ -1,0 +1,38 @@
+{
+    "max_price": 99999,
+    "prian": {
+        "protocol": "https",
+
+        "host": "https://prian.ru",
+
+        "base_url": "https://prian.ru/search/",
+
+        "url_params": {
+            "full": "0",
+            "acountry[1]": "38",
+            "aregion[1]": "27",
+            "adistrict[1]": "1191",
+            "type[]": "1",
+            "parent": "100",
+            "pobjects[]": "15",
+            "where[1]": "Стамбул",
+            "search_currency": "1",
+            "square_land_unit2": "128",
+            "square_land_unit": "128"
+        }
+    },
+    "real_east": {
+        "protocol": "https",
+
+        "host": "https://m.realeast.su",
+
+        "base_url": "https://m.realeast.su/",
+
+        "url_params": {
+            "for": "all",
+            "rooms": "all",
+            "city": "34",
+            "type": "1"
+        }
+    }
+}
