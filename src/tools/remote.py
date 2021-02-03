@@ -1,8 +1,8 @@
-from os               import getcwd, path, remove
-from selenium         import webdriver
+from os                         import getcwd, path, remove
+from selenium                   import webdriver
 from selenium.common.exceptions import TimeoutException
-from pyvirtualdisplay import Display
-from typing           import Union
+from pyvirtualdisplay           import Display
+from typing                     import Union
 
 from tools.logger import Logger
 
@@ -58,7 +58,7 @@ class Remote:
             self.setBrowser()
 
         try:
-            self.__logger.log('Getting Content Form %s' % url)
+            self.__logger.log('Getting Content From %s' % url)
 
             self.__browser.get(url)
 
