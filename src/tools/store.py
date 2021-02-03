@@ -41,7 +41,7 @@ class Store:
 
         if not path.exists(dbFilePath) or not path.isfile(dbFilePath):
             self.__initStore()
-            chmod(dbFilePath, 0o775)
+            chmod(dbFilePath, 0o755)
 
     def getRowByHash(self, hash: str) -> Union[tuple, None]:
         if self.__dbConnection is None:

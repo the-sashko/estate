@@ -62,7 +62,7 @@ class Logger:
 
         if not path.exists(logDirPath) or not path.isdir(logDirPath):
             mkdir(logDirPath)
-            chmod(logDirPath, 0o775)
+            chmod(logDirPath, 0o755)
 
     def __getOldLogName(self, logType: str) -> str:
         oldYear = str(int(datetime.datetime.today().strftime('%Y')) - 1)
@@ -101,4 +101,4 @@ class Logger:
             with open(logFilePath, 'a'):
                 pass
 
-        chmod(logFilePath, 0o775)
+        chmod(logFilePath, 0o755)
