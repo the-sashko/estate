@@ -1,4 +1,5 @@
 __pycache__
+.env
 bin/store.db
 config/telegram.json
 logs
