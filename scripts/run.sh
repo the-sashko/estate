@@ -5,7 +5,11 @@ scriptDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" > /dev/null && pwd)"
 
 cd "$scriptDir/.." || exit 1
 
+source .env/bin/activate
+
 ./src/run.py
+
+deactivate
 
 cd "$currDir" || exit 1
 
