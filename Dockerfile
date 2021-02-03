@@ -2,7 +2,7 @@ FROM alpine:3.10.2
 
 MAINTAINER inbox@sashko.me
 
-RUN apk add git bash
+RUN apk add git bash xvfb python3 py3-pip
 
 RUN mkdir /storage
 
