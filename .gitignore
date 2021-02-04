@@ -1,6 +1,6 @@
 __pycache__
 .env
 data/store.db
-data/config/telegram.json
 data/logs
+config/telegram.json
 

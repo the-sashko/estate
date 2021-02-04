@@ -1,7 +1,7 @@
 from typing import Union
 
 from parser.sites import site
-from parser.card import Card
+from parser.card  import Card
 
 class RealEast(site.Site):
     __PATTERN_CARD_URL = '<a[^>]+href=\"(\?id=[0-9]+)\">'

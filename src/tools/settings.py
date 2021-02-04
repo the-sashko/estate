@@ -3,7 +3,7 @@ import json
 from os import getcwd, path
 
 class Settings:
-    __CONFIG_FILE_PATH = '%s/data/config/%s.json'
+    __CONFIG_FILE_PATH = '%s/config/%s.json'
 
     __PARSER_CONFIG_NAME   = 'parser'
     __TELEGRAM_CONFIG_NAME = 'telegram'

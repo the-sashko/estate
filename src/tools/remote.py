@@ -7,7 +7,7 @@ from typing                     import Union
 from tools.logger import Logger
 
 class Remote:
-    __GEKO_DRIVER_PATH     = 'data/drivers/geckodriver'
+    __GEKO_DRIVER_PATH     = 'bin/drivers/geckodriver'
     __GEKO_DRIVER_LOG_PATH = 'data/logs/gecko_driver.log'
 
     __TIMEOUT = 60
