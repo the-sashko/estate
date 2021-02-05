@@ -24,7 +24,7 @@ sudo docker build -t estate_parser .
 
 rm -rf Dockerfile
 
-sudo docker run -d -p 80:80 --name estate_parser -v "$(pwd)/data":/storage/estate_parser/data estate_parser
+sudo docker run -it --name estate_parser -v "$(pwd)/data":/storage/estate_parser/data estate_parser /storage/estate_parser/config/telegram.json
 
 cd "$currDir" || exit 1
 
