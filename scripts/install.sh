@@ -13,7 +13,6 @@ chmod -R 755 data
 
 cp install/config/telegram.json data/config/telegram.json
 chmod 755 data/config/telegram.json
-vi data/config/telegram.json
 
 ln -s data/config/telegram.json config/telegram.json
 

@@ -12,6 +12,8 @@ rm -rf install
 rm -rf scripts
 rm -rf docs
 rm -rf src
+rm -rf config
+rm -rf bin
 
 rm -f .gitignore
 rm -f LICENSE
