@@ -8,7 +8,7 @@ RUN git clone https://github.com/the-sashko/estate /storage/estate_parser
 
 RUN /bin/bash /storage/estate_parser/scripts/install.sh
 
-rm -rf /storage/estate_parser/data
+RUN rm -rf /storage/estate_parser/data
 
 EXPOSE 80
 

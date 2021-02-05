@@ -7,20 +7,21 @@ cd "$scriptDir/.." || exit 1
 
 mkdir data
 mkdir data/logs
+mkdir data/config
 
 chmod -R 755 data
 
-cp install/config/telegram.json config/telegram.json
-chmod 755 config/telegram.json
+cp install/config/telegram.json data/config/telegram.json
+chmod 755 data/config/telegram.json
+vi data/config/telegram.json
 
-ln -s config data/config
+ln -s data/config/telegram.json config/telegram.json
 
 python3 -m venv .env
 
 source .env/bin/activate
 
 pip3 install --upgrade pip
-
 pip3 install -r requirements.txt
 
 deactivate
@@ -28,3 +29,4 @@ deactivate
 cd "$currDir" || exit 1
 
 exit 0
+
