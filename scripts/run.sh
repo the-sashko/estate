@@ -9,7 +9,7 @@ cd "$scriptDir/.." || exit 1
 
 source bin/activate
 
-./src/run.py
+python3 src/run.py
 
 deactivate
 
