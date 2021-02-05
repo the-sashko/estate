@@ -16,9 +16,9 @@ chmod 755 data/config/telegram.json
 
 ln -s data/config/telegram.json config/telegram.json
 
-python3 -m venv .env
+python3 -m venv "$(pwd)"
 
-source .env/bin/activate
+source bin/activate
 
 pip3 install --upgrade pip
 pip3 install -r requirements.txt
