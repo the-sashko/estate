@@ -2,7 +2,7 @@
 
 ## Install With Docker
 
-`git clone git@github.com:the-sashko/estate.git <YOUR_PROJECT>`
+`git clone https://github.com/the-sashko/estate.git <YOUR_PROJECT>`
 
 `cd <YOUR_PROJECT>`
 
@@ -18,7 +18,7 @@ Add To Crontab
 
 **Strongly recommend use this way only for development or debugging**
 
-`git clone git@github.com:the-sashko/estate.git <YOUR_PROJECT>`
+`git clone https://github.com/the-sashko/estate.git <YOUR_PROJECT>`
 
 `cd <YOUR_PROJECT>`
 
