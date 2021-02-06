@@ -5,16 +5,17 @@ scriptDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" > /dev/null && pwd)"
 
 cd "$scriptDir/.." || exit 1
 
-mkdir data
-mkdir data/logs
-mkdir data/config
+if [[ ! -d data ]]
+then
+    mkdir data
+    mkdir data/logs
+    mkdir data/config
 
-chmod -R 755 data
+    chmod -R 755 data
 
-cp install/config/telegram.json data/config/telegram.json
-chmod 755 data/config/telegram.json
-
-ln -s data/config/telegram.json config/telegram.json
+    cp install/config/telegram.json data/config/telegram.json
+    chmod 755 data/config/telegram.json
+fi
 
 python3 -m venv "$(pwd)"
 
