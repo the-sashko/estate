@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo docker start estate_parser
+docker start estate_parser
