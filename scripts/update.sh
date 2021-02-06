@@ -11,7 +11,7 @@ git pull origin master
 
 cd "$currDir" || exit 1
 
-if [[ ! -f data/config/telegram.json ]]
+if [[ -f data/config/telegram.json ]]
 then
     rm config/telegram.json
     cp data/config/telegram.json config/telegram.json
