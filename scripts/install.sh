@@ -17,6 +17,9 @@ then
     chmod 755 data/config/telegram.json
 fi
 
+cp install/config/telegram.json config/telegram.json
+chmod 755 config/telegram.json
+
 python3 -m venv "$(pwd)"
 
 source bin/activate
