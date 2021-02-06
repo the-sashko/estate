@@ -1,6 +1,6 @@
 FROM alpine:3.10.2
 
-RUN apk add git=2.22.4-r0
+RUN apk add git=2.22.4-r0 --no-cache
 
 RUN apk add bash=5.0.0-r0 --no-cache
 
@@ -9,8 +9,6 @@ RUN apk add xvfb=1.20.5-r2 --no-cache
 RUN apk add firefox-esr=60.9.0-r0 --no-cache
 
 RUN apk add python3=3.7.7-r1 --no-cache
-
-RUN apk add py3-pi --no-cache
 
 RUN mkdir /storage
 
