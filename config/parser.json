@@ -44,16 +44,12 @@
 
         "url_params": {
             "full": "0",
-            "acountry[1]": "1",
+            "acountry[1]": "7",
             "aregion[1]": "149",
             "adistrict[1]": "0",
             "type[]": "1",
-            "parent": "100",
-            "pobjects[]": "15",
             "where[1]": "Северный Кипр",
-            "search_currency": "1",
-            "square_land_unit2": "128",
-            "square_land_unit": "128"
+            "search_currency": "1"
         }
     }
 }
