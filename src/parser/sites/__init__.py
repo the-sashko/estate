@@ -1,1 +1,1 @@
-__all__ = ["prian", "realeast"]
+__all__ = ["prian", "prian_cyprus", "realeast"]
