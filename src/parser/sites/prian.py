@@ -14,9 +14,11 @@ class Prian(site.Site):
     __PATTERN_CARD_TITLE = '^.*?<h1 class\=\"c\-header__title\">(.*?)<\/h1>.*?$'
 
     __PATTERN_CARD_PRICE = '^.*?<p class\=\"c\-header__price\">\s+([^>]+)\$\s+<\/p>.*?$'
+    
+    __PARSER_NAME = 'prian.ru (Istanbul)'
 
     def parse(self):
-        self.logger.log('Start Parsing prian.ru')
+        self.logger.log('Start Parsing %s' % self.__PARSER_NAME)
 
         prianUrl = self.url.getUrl(
             self.settings['base_url'],
@@ -34,7 +36,7 @@ class Prian(site.Site):
 
             self.__parseCardsFromHtml(html, nextUrl)
 
-        self.logger.log('End Parsing prian.ru')
+        self.logger.log('End Parsing %s' % self.__PARSER_NAME)
 
     def __parseCardsFromHtml(self, html: str, currentUrl: str) -> bool:
         cardUrls = self.__getCardsUrlFromHtml(html)
