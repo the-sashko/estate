@@ -8,7 +8,7 @@ class Parser:
 
     def parse(self):
         prian.Prian(self.__settings['prian']).parse()
-        prian_cyprus.PrianCyprus(self.__settings['prian_cyprus']).parse()
+        #prian_cyprus.PrianCyprus(self.__settings['prian_cyprus']).parse()
         realeast.RealEast(self.__settings['real_east']).parse()
 
     def __prepareSetting(self, settings: dict) -> dict:
