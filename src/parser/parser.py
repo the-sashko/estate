@@ -8,6 +8,7 @@ class Parser:
 
     def parse(self):
         prian.Prian(self.__settings['prian']).parse()
+        prian_cyprus.PrianCyprus(self.__settings['prian_cyprus']).parse()
         realeast.RealEast(self.__settings['real_east']).parse()
 
     def __prepareSetting(self, settings: dict) -> dict:
@@ -16,5 +17,7 @@ class Parser:
         settings['real_east']['url_params']['price'] = str(
             int(settings['max_price'] / 1000)
         )
+
+        settings['prian_cyprus']['url_params']['maxprice'] = settings['max_price']
 
         return settings
